@@ -1681,22 +1681,22 @@ let skewY: Types.Angle.t => [> Types.Transform.t]
 
 let linearGradient: (
   Types.Angle.t,
-  array<(Types.PercentageLengthCalc.t, [Types.Color.t | Types.Var.t])>,
+  array<(Types.PercentageLengthCalc.t, [> Types.Color.t | Types.Var.t])>,
 ) => [> Types.Gradient.t]
 let repeatingLinearGradient: (
   Types.Angle.t,
-  array<(Types.PercentageLengthCalc.t, [Types.Color.t | Types.Var.t])>,
+  array<(Types.PercentageLengthCalc.t, [> Types.Color.t | Types.Var.t])>,
 ) => [> Types.Gradient.t]
-let radialGradient: array<(Types.PercentageLengthCalc.t, [Types.Color.t | Types.Var.t])> => [>
+let radialGradient: array<(Types.PercentageLengthCalc.t, [> Types.Color.t | Types.Var.t])> => [>
   | Types.Gradient.t
 ]
 let repeatingRadialGradient: array<(
   Types.PercentageLengthCalc.t,
-  [Types.Color.t | Types.Var.t],
+  [> Types.Color.t | Types.Var.t],
 )> => [> Types.Gradient.t]
 let conicGradient: (
   Types.Angle.t,
-  array<(Types.PercentageLengthCalc.t, [Types.Color.t | Types.Var.t])>,
+  array<(Types.PercentageLengthCalc.t, [> Types.Color.t | Types.Var.t])>,
 ) => [> Types.Gradient.t]
 
 let areas: array<string> => [> Types.GridTemplateAreas.t]
